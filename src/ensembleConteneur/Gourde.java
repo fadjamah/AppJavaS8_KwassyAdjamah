@@ -39,7 +39,6 @@ public final class Gourde extends Conteneur {
 		this.setPrix(prix);	
 	}
 	
-	
 	/**Nous allons redéfinir la méthode pour compléter que ce conteneur est une gourde**/
 	public String toString() {
 		String str = super.toString();
@@ -47,9 +46,6 @@ public final class Gourde extends Conteneur {
 		
 		return str;
 	}
-	
-
-
-	
+		
 	
 }

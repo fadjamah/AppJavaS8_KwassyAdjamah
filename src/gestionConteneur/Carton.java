@@ -129,6 +129,12 @@ public final class Carton {
 		return instance; 
 	}
 
+
+	public void setMarque(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
 	
 	
 }

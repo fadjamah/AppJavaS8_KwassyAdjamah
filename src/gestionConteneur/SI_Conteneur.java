@@ -25,38 +25,38 @@ public class SI_Conteneur {
 			
 		/*Design pattern Singleton pour n'utiliser qu'un objet Gourde et ne pas instancier d'autres à chaque fois
 		 * ainsi on a mis les attribut en static */
-		Carton c = Carton.getInstance();
-		c.setContient(b);
+		Carton.getInstance();
+		Carton.getInstance().setContient(b);
 			
 		/**Instanciation des conteneurs et attribution de leurs marques**/
+		
 		Conteneur b1 = new Conteneur (); 
 		b1.setMarque("Ice.");
 		Conteneur b2 = new Conteneur ();	
 		b2.setMarque("Yumi.");
 			
 		/**Ajout des conteneurs dans le carton**/
-		c.ajouterConteneur(b1);
-		c.ajouterConteneur(b2);
+		Carton.getInstance().ajouterConteneur(b1);
+		Carton.getInstance().ajouterConteneur(b2);
 					
 		/*Le nombre et la liste de conteneur*/
-		c.afficherInfo();
+		Carton.getInstance().afficherInfo();
 		
 		
 		/*Instanciation des pets et leur ajout dans le carton
 		 * les pets sont considérés comme des conteneurs, il faut les ajouter comme 
 		 * conteneur afin de les inclures dans le nombre de conteneur du carton*/
 		Pet p1 = new Pet ();
-		c.setContient1(p1);
-		c.ajouterConteneur(p1);
-		c.ajouterPets(p1);
+		Carton.getInstance().setContient1(p1);
+		Carton.getInstance().ajouterConteneur(p1);
+		Carton.getInstance().ajouterPets(p1);
 		p1.setMarque("Evians.");
 		
 		Pet p2 = new Pet ();
-		c.setContient1(p2);
-		c.ajouterConteneur(p2); 
-		c.ajouterPets(p2);
-		p2.setMarque("SourceVie.");
-		p2.isBiodegradable();
+		Carton.getInstance().setContient1(p2);
+		Carton.getInstance().ajouterConteneur(p2); 
+		Carton.getInstance().ajouterPets(p2);
+		Carton.getInstance().setMarque("SourceVie.");
 		
 		
 		/*Instanciation des gourdes et leur ajout dans le carton 
@@ -67,15 +67,15 @@ public class SI_Conteneur {
 		 */
 		
 		Gourde g = new Gourde ("Heinneez.", " Verte",  -10);
-		c.setContient2(g);
-		c.ajouterConteneur(g); 
-		c.ajouterGourdes(g);
+		Carton.getInstance().setContient2(g);
+		Carton.getInstance().ajouterConteneur(g); 
+		Carton.getInstance().ajouterGourdes(g);
 		
 		/*Nombre total et liste des conteneurs*/
-		c.afficherConteneurTotal();
+		Carton.getInstance().afficherConteneurTotal();
 		
 		/*Nombre total de conteneur y compris le nombre de pets et de gourdes*/
-		c.afficherQteChaqueConteneur();
+		Carton.getInstance().afficherQteChaqueConteneur();
 
 		
 		//Interface graphique qui va lancer notre application.

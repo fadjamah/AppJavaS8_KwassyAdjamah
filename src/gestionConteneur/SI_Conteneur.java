@@ -56,7 +56,7 @@ public class SI_Conteneur {
 		Carton.getInstance().setContient1(p2);
 		Carton.getInstance().ajouterConteneur(p2); 
 		Carton.getInstance().ajouterPets(p2);
-		Carton.getInstance().setMarque("SourceVie.");
+		p2.setMarque("SourceVie.");
 		
 		
 		/*Instanciation des gourdes et leur ajout dans le carton 

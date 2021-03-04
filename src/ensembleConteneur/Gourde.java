@@ -1,9 +1,13 @@
 package ensembleConteneur;
 
+import gestionConteneur.Carton;
+
 public final class Gourde extends Conteneur {
 	
-	private String couleur;
+	private static Gourde instance;
+	private static String couleur;
 	private  int prix;
+
 
 	public int getPrix() {
 		return prix;
@@ -24,6 +28,7 @@ public final class Gourde extends Conteneur {
 	/*Ces deux constructeurs ci-dessous pour faire appel à la marque (constructeur dans la classe conteneur 
 	 * puis ensuite créée de nouvel objet gourde en ajoutant la couleur et le prix?**/
 	
+	
 	public Gourde (String m){
 		super (m);
 	}
@@ -33,6 +38,7 @@ public final class Gourde extends Conteneur {
 		this.setCouleur(couleur);
 		this.setPrix(prix);	
 	}
+	
 	
 	/**Nous allons redéfinir la méthode pour compléter que ce conteneur est une gourde**/
 	public String toString() {

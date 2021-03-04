@@ -3,11 +3,11 @@ package ensembleConteneur;
 
 /**Conteneur est une classe abstraite et donc on ajoute ABSTRACT, ainsi la classe conteneur deveint une superclasse 
  * ou classe abstraite et ses méthodes deviennent des méthodes abstraites**/
-public class Conteneur {
+public class Conteneur extends Exception {
 	
 	private String marque;
 	private String forme;
-	
+
 
 	public String getMarque() {
 		return marque;

@@ -14,9 +14,7 @@ import ensembleConteneur.Pet;
 import interfacesGraphiques.PageLogin;
 
 
-
 public class SI_Conteneur {
-
 
 	public static void main(String[] args) {
 				
@@ -79,7 +77,6 @@ public class SI_Conteneur {
 		/*Nombre total de conteneur y compris le nombre de pets et de gourdes*/
 		c.afficherQteChaqueConteneur();
 
-		
 		
 		//Interface graphique qui va lancer notre application.
 		

@@ -1,11 +1,7 @@
 package interfacesGraphiques;
-import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Desktop;
-import java.awt.EventQueue;
-
-import java.sql.*;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -25,32 +21,13 @@ import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import javax.swing.JTextArea;
-import javax.swing.JTextPane;
-import javax.swing.JFormattedTextField;
 
-public class PageLogin extends JFrame {
+public final class PageLogin extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textField;
 	private JPasswordField passwordField_1;
 
-	/**
-	 * Launch the application.
-	 
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					interfacegraph frame = new interfacegraph();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-	*/
 	
 	/**
 	 * Create the frame.
@@ -151,6 +128,7 @@ public class PageLogin extends JFrame {
 			}
 			
 		});
+		
 		oubliemp.setBounds(450, 333, 296, 20);
 		contentPane.add(oubliemp);
 		
@@ -188,20 +166,6 @@ public class PageLogin extends JFrame {
 						
 					}
 					
-					/*
-					Class.forName("com.mysql.cj.jdbc.Driver");
-					Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/logininfo", "root", "Respect.1");
-					Statement stmt = con.createStatement();
-					String sql="Select * FROM conteneur where";
-					ResultSet rs = stmt.executeQuery (sql);
-					
-					
-					if (rs.next())
-						JOptionPane.showMessageDialog(null, "Ajout réussi");
-					else 
-						JOptionPane.showMessageDialog(null, "Erreur d'ajout");
-					con.close();
-					*/
 					
 				} catch (Exception e1) {
 					

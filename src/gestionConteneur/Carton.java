@@ -42,7 +42,6 @@ public final class Carton {
 		return gourdes;
 	}
 	
-
 	/**La méthode toString pour connaître le nombre de conteneur dans le carton**/
 	public String toString () {
 		String str = "Ce carton contient ";
@@ -109,11 +108,9 @@ public final class Carton {
 	Pet pet;
 
 	public void afficherPetBiodegradable (Pet pet) {
-		
 		pet.isBiodegradable();
 		
 	}
-	
 	
 	private Carton() {
 		//Traitement du constructeur du pattern Singleton
@@ -121,14 +118,12 @@ public final class Carton {
 	}
 	
 	public static Carton getInstance() {
-		
 		if (instance == null) {
 			instance = new Carton(); 
 		}
 		
 		return instance; 
 	}
-
 
 	public void setMarque(String string) {
 		// TODO Auto-generated method stub

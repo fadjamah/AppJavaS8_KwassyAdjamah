@@ -97,7 +97,8 @@ public class SI_Conteneur {
 		String username = "root";
 		String password = "Respect.1";
 		
-		//Exception pour les exception de connexion à la BDD
+		//Exception pour les erreurs de connexion à la BDD
+		
 		try {
 			Connection connection = DriverManager.getConnection(url, username, password);
 			

@@ -8,10 +8,6 @@ import ensembleConteneur.Pet;
 
 public final class Carton {
 	
-	private String forme; 
-	private Conteneur contient;
-	private Pet contient1;
-	private Gourde contient2;
 	private static Carton instance; //l'attribut qui stocke l'instance doit être en static.
 	
 	private ArrayList<Conteneur> conteneurs = new ArrayList<Conteneur> ();
@@ -60,15 +56,12 @@ public final class Carton {
 	}
 
 	public void setContient(Conteneur contient) {
-		this.contient = contient;
 	}
 
 	public void setContient1(Pet contient1) {
-		this.contient1 = contient1;
 	}
 
 	public void setContient2(Gourde contient2) {
-		this.contient2 = contient2;
 	}
 
 	/*La nombre total de conteneur dans le carton*/
@@ -118,7 +111,7 @@ public final class Carton {
 	}
 
 	public void setMarque(String string) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 

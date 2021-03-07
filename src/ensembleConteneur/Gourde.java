@@ -19,7 +19,7 @@ public final class Gourde extends Conteneur {
 	}
 
 	public void setCouleur(String couleur) {
-		this.couleur = couleur;
+		Gourde.couleur = couleur;
 	}
 	
 	/*Ces deux constructeurs ci-dessous pour faire appel à la marque (constructeur dans la classe conteneur 

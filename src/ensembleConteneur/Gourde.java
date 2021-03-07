@@ -1,10 +1,7 @@
 package ensembleConteneur;
 
-import gestionConteneur.Carton;
-
 public final class Gourde extends Conteneur {
 	
-	private static Gourde instance;
 	private static String couleur;
 	private  int prix;
 

@@ -104,14 +104,6 @@ public final class Carton {
 		
 	}
 	
-	/*Respect de la loi de demeter pour connaitre les pets qui sont biodegradable sans passer par la classe mère conteneur */
-	Pet pet;
-
-	public void afficherPetBiodegradable (Pet pet) {
-		pet.isBiodegradable();
-		
-	}
-	
 	private Carton() {
 		//Traitement du constructeur du pattern Singleton
 		

@@ -23,8 +23,7 @@ public final class Gourde extends Conteneur {
 	}
 	
 	/*Ces deux constructeurs ci-dessous pour faire appel à la marque (constructeur dans la classe conteneur 
-	 * puis ensuite créée de nouvel objet gourde en ajoutant la couleur et le prix?**/
-	
+	 * puis ensuite créer de nouvel objet gourde en ajoutant la couleur et le prix?**/
 	
 	public Gourde (String m){
 		super (m);

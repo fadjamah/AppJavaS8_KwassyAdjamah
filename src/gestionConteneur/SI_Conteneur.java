@@ -23,12 +23,12 @@ public class SI_Conteneur {
 		
 		System.out.println ("Ce conteneur est de la marque " + b.getMarque());
 			
-		/*Design pattern Singleton pour n'utiliser qu'un objet Gourde et ne pas instancier d'autres à chaque fois
-		 * ainsi on a mis les attribut en static */
+		/*Design pattern Singleton pour n'utiliser qu'un objet carton et ne pas instancier d'autres à chaque fois
+		 */
 		Carton.getInstance();
 		Carton.getInstance().setContient(b);
 			
-		/**Instanciation des conteneurs et attribution de leurs marques**/
+		/**Instanciation des conteneurs avec leurs marques**/
 		
 		Conteneur b1 = new Conteneur (); 
 		b1.setMarque("Ice.");
@@ -43,7 +43,7 @@ public class SI_Conteneur {
 		Carton.getInstance().afficherInfo();
 		
 		
-		/*Instanciation des pets et leur ajout dans le carton
+		/*Instanciation des pets, cartons et leur ajout dans le carton
 		 * les pets sont considérés comme des conteneurs, il faut les ajouter comme 
 		 * conteneur afin de les inclures dans le nombre de conteneur du carton*/
 		Pet p1 = new Pet ();
@@ -57,14 +57,6 @@ public class SI_Conteneur {
 		Carton.getInstance().ajouterConteneur(p2); 
 		Carton.getInstance().ajouterPets(p2);
 		p2.setMarque("SourceVie.");
-		
-		
-		/*Instanciation des gourdes et leur ajout dans le carton 
-		 * les gourdes sont considérées comme des conteneurs, il faut les ajouter comme 
-		 * conteneur afin de les inclures dans le nombre de conteneur du carton
-		 * Vu que ma méthode main est en dehors de classe Gourde, je ne peux que utiliser 
-		 * getInstance pour avoir accès au constructeur privé de la class Gourde.
-		 */
 		
 		Gourde g = new Gourde ("Heinneez.", " Verte",  -10);
 		Carton.getInstance().setContient2(g);

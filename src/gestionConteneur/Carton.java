@@ -8,7 +8,7 @@ import ensembleConteneur.Pet;
 
 public final class Carton {
 	
-	private static Carton instance; //l'attribut qui stocke l'instance doit être en static.
+	private static Carton instance; //l'attribut qui stocke l'instance.
 	
 	private ArrayList<Conteneur> conteneurs = new ArrayList<Conteneur> ();
 	private ArrayList<Pet> pets = new ArrayList<Pet>();

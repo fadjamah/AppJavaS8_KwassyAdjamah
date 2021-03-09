@@ -18,7 +18,7 @@ class PetTest {
 		/*utiliser assertEquals pour faire des test unitaire qui va vérifier que quand on appelle la méthode 
 		 * est ce que ca nous retourne notre présiction, sinon il nous retourner une erreur*/ 
 
-		assertEquals ("Ce conteneur est de marque " + p1.getMarque() + " C'est un pet.", p1.toString());
+		assertEquals ("   - Un conteneur de marque " + p1.getMarque() + ". Ceci est un pet.", p1.toString());
 
 	}
 

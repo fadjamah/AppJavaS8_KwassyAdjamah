@@ -7,7 +7,7 @@ public class Pet extends Conteneur {
 	
 	public String toString() {
 		String str = super.toString();
-		str = str + " Ceci est un pet.";
+		str = str + ". Ceci est un pet.";
 		
 		return str;
 	}

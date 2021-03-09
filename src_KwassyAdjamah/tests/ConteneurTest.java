@@ -18,7 +18,7 @@ class ConteneurTest {
 			/*utiliser assertEquals pour faire des test unitaires qui va vérifier que quand on appelle la méthode 
 			 * est ce que ca nous retourne notre prédiction, sinon il nous retourne une erreur*/ 
 			
-			assertEquals ("Ce conteneur est de marque " + c.getMarque(), c.toString());
+			assertEquals ("   - Un conteneur de marque " + c.getMarque(), c.toString());
 			
 			
 	}

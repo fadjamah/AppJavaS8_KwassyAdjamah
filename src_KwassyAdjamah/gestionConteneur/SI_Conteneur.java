@@ -58,7 +58,7 @@ public class SI_Conteneur {
 		Carton.getInstance().ajouterPets(p2);
 		p2.setMarque("SourceVie.");
 		
-		Gourde g = new Gourde ("Heinneez.", " Verte",  -10);
+		Gourde g = new Gourde ("Heinneez.", " Verte",  10);
 		Carton.getInstance().setContient2(g);
 		Carton.getInstance().ajouterConteneur(g); 
 		Carton.getInstance().ajouterGourdes(g);

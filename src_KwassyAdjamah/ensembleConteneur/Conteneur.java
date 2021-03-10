@@ -1,11 +1,10 @@
 package ensembleConteneur;
 
 
-public class Conteneur extends Exception {
+public class Conteneur {
 	
 	private String marque;
 	private String forme;
-
 
 	public String getMarque() {
 		return marque;

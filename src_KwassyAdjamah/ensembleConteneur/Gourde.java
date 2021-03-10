@@ -1,6 +1,6 @@
 package ensembleConteneur;
 
-public final class Gourde extends Conteneur {
+public class Gourde extends Conteneur {
 	
 	private static String couleur;
 	private  int prix;
